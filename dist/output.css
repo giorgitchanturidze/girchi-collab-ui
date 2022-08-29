@@ -410,6 +410,10 @@ video {
   height: auto;
 }
 
+p,h1,h2,h3,h4,h5,h6,a{
+  font-family: 'TBCContractica';
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -551,16 +555,8 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
+@font-face {
+  font-family: 'TBCContractica';
 
-.font-bold {
-  font-weight: 700;
-}
-
-.underline {
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
+  src:  url('../font/TBCContractica-Regular.ttf')
 }
