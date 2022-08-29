@@ -4,12 +4,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'darkButton' : '#323329',
-        'greenText' : '#327F37',
-        'lightRed' : '#F95A64', // Vector 185
-        'lightBlue' : '#2F69FF', // Vector 186
-        'greenButton' : '#1A8917', // Vector 187 and buttons
-        'lightGray' : '#F5F5F7', // Background color
+        'lightGray' : '#727A82', // Gray text color
+        'midGray' : '#F5F5F7', // Background color
+        'greenButton' : '#1A8917', // Green buttons
+        'darkButton' : '#323329', // Dark buttons
+        'greenText' : '#327F37', // Green text 
+        'lightGreen' : '#1A8917', // Light green text for active tabs
+        'lightBlack' : '#292D33', // Main black color
       }
     },
   },
