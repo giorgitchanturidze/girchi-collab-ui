@@ -555,6 +555,20 @@ p,h1,h2,h3,h4,h5,h6,a{
   --tw-backdrop-sepia:  ;
 }
 
+.rounded {
+  border-radius: 0.25rem;
+}
+
+.bg-greenButton {
+  --tw-bg-opacity: 1;
+  background-color: rgb(26 137 23 / var(--tw-bg-opacity));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 @font-face {
   font-family: 'TBCContractica';
 
