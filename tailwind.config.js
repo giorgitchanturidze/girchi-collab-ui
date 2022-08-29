@@ -6,9 +6,10 @@ module.exports = {
       colors: {
         'darkButton' : '#323329',
         'greenText' : '#327F37',
-        'lightRed' : '#F95A64', //vector 185
-        'lightBlue' : '#2F69FF', //vector 186
-        'greenButton' : '#1A8917', //vector 187 and buttons
+        'lightRed' : '#F95A64', // Vector 185
+        'lightBlue' : '#2F69FF', // Vector 186
+        'greenButton' : '#1A8917', // Vector 187 and buttons
+        'lightGray' : '#F5F5F7', // Background color
       }
     },
   },
