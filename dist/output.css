@@ -808,6 +808,10 @@ p,h1,h2,h3,h4,h5,h6,a{
   margin-right: 25px;
 }
 
+.mr-\[40px\] {
+  margin-right: 40px;
+}
+
 .block {
   display: block;
 }
@@ -1057,6 +1061,21 @@ p,h1,h2,h3,h4,h5,h6,a{
   border-width: 1px;
 }
 
+.border-x {
+  border-left-width: 1px;
+  border-right-width: 1px;
+}
+
+.border-x-2 {
+  border-left-width: 2px;
+  border-right-width: 2px;
+}
+
+.border-x-4 {
+  border-left-width: 4px;
+  border-right-width: 4px;
+}
+
 .border-b {
   border-bottom-width: 1px;
 }
@@ -1069,6 +1088,16 @@ p,h1,h2,h3,h4,h5,h6,a{
 .border-gray-100 {
   --tw-border-opacity: 1;
   border-color: rgb(243 244 246 / var(--tw-border-opacity));
+}
+
+.border-black {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
+
+.border-gray-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(107 114 128 / var(--tw-border-opacity));
 }
 
 .bg-midGray {
