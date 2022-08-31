@@ -1,4 +1,11 @@
-# [girchi-collab-ui](https://giorgitchanturidze.github.io/girchi-collab-ui/src/index.html)
+# girchi-collab-ui
+
+[Home Page](https://giorgitchanturidze.github.io/girchi-collab-ui/src/index.html)
+[Birth of Georgia Page]()
+[The Cannabis Society Page]()
+[Politician financing Page]()
+
+
 Run TailwindCss
 ```
 npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
