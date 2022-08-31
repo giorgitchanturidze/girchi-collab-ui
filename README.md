@@ -4,7 +4,7 @@
 
 [Birth of Georgia Page]()
 
-[The Cannabis Society Page]()
+[The Cannabis Society Page](https://giorgitchanturidze.github.io/girchi-collab-ui/src/weed-society.html)
 
 [Politician financing Page]()
 
