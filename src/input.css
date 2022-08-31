@@ -13,3 +13,8 @@
         font-family: 'TBCContractica';
     }
 }
+
+.active-btn {
+    background-color: white;
+    color: #292D33;
+}
