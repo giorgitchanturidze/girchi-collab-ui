@@ -6,6 +6,7 @@ module.exports = {
       colors: {
         'lightGray' : '#727A82', // Gray text color
         'midGray' : '#F5F5F7', // Background color
+        'borderGray' : '#EAEAEB', // Border color
         'greenButton' : '#1A8917', // Green buttons
         'darkButton' : '#323329', // Dark buttons
         'greenText' : '#327F37', // Green text 
