@@ -822,7 +822,7 @@ p,h1,h2,h3,h4,h5,h6,a{
 }
 
 .bg-progress {
-  background-color: #2f69ff0a;
+  background-color: #2f69ff0;
 }
 
 .bg-midGray {
@@ -946,10 +946,6 @@ p,h1,h2,h3,h4,h5,h6,a{
 }
 
 .font-\[500\] {
-  font-weight: 500;
-}
-
-.font-medium {
   font-weight: 500;
 }
 
