@@ -13,9 +13,3 @@
         font-family: 'TBCContractica';
     }
 }
-h1,h2,h3 {
-    font-size: 1.5rem;
-    font-weight: bolder;
-    text-transform: capitalize;
-    color: #292D33;
-}
