@@ -949,6 +949,14 @@ p,h1,h2,h3,h4,h5,h6,a{
   font-weight: 500;
 }
 
+.font-medium {
+  font-weight: 500;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
 .leading-\[2rem\] {
   line-height: 2rem;
 }
@@ -997,13 +1005,6 @@ p,h1,h2,h3,h4,h5,h6,a{
   font-family: 'TBCContractica';
 
   src:  url('../font/TBCContractica-Regular.ttf')
-}
-
-h1,h2,h3 {
-  font-size: 1.5rem;
-  font-weight: bolder;
-  text-transform: capitalize;
-  color: #292D33;
 }
 
 .hover\:border-b-\[1px\]:hover {
