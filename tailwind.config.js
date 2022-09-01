@@ -12,6 +12,7 @@ module.exports = {
         'greenText' : '#327F37', // Green text 
         'lightGreen' : '#1A8917', // Light green text for active tabs
         'lightBlack' : '#292D33', // Main black color
+        'lightBlue' : '#2F69FF', // light blue color
       }
     },
   },

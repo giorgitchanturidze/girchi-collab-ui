@@ -559,18 +559,19 @@ p,h1,h2,h3,h4,h5,h6,a{
   position: absolute;
 }
 
-.relative {
-  position: relative;
-}
-
-.mx-\[288\] {
-  margin-left: 288;
-  margin-right: 288;
-}
-
 .mx-\[288px\] {
   margin-left: 288px;
   margin-right: 288px;
+}
+
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.my-5 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
 }
 
 .mr-\[32px\] {
@@ -637,12 +638,6 @@ p,h1,h2,h3,h4,h5,h6,a{
   display: grid;
 }
 
-.w-max {
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-}
-
 .flex-row {
   flex-direction: row;
 }
@@ -691,20 +686,14 @@ p,h1,h2,h3,h4,h5,h6,a{
   gap: 2px;
 }
 
-.gap-1 {
-  gap: 0.25rem;
+.gap-x-3 {
+  -moz-column-gap: 0.75rem;
+       column-gap: 0.75rem;
 }
 
-.gap-2 {
-  gap: 0.5rem;
-}
-
-.gap-3 {
-  gap: 0.75rem;
-}
-
-.gap-4 {
-  gap: 1rem;
+.gap-x-5 {
+  -moz-column-gap: 1.25rem;
+       column-gap: 1.25rem;
 }
 
 .self-center {
@@ -753,8 +742,8 @@ p,h1,h2,h3,h4,h5,h6,a{
   border-bottom-width: 1px;
 }
 
-.border-t-\[8px\] {
-  border-top-width: 8px;
+.border-b-\[2px\] {
+  border-bottom-width: 2px;
 }
 
 .border-white {
@@ -772,11 +761,6 @@ p,h1,h2,h3,h4,h5,h6,a{
   border-color: rgb(26 137 23 / var(--tw-border-opacity));
 }
 
-.bg-midGray {
-  --tw-bg-opacity: 1;
-  background-color: rgb(245 245 247 / var(--tw-bg-opacity));
-}
-
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -787,9 +771,19 @@ p,h1,h2,h3,h4,h5,h6,a{
   background-color: rgb(26 137 23 / var(--tw-bg-opacity));
 }
 
+.bg-lightBlack {
+  --tw-bg-opacity: 1;
+  background-color: rgb(41 45 51 / var(--tw-bg-opacity));
+}
+
 .bg-gray-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+}
+
+.bg-midGray {
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 245 247 / var(--tw-bg-opacity));
 }
 
 .p-\[32px\] {
@@ -815,6 +809,21 @@ p,h1,h2,h3,h4,h5,h6,a{
   padding-right: 32px;
 }
 
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
 .px-\[12px\] {
   padding-left: 12px;
   padding-right: 12px;
@@ -825,9 +834,9 @@ p,h1,h2,h3,h4,h5,h6,a{
   padding-bottom: 4px;
 }
 
-.px-\[288px\] {
-  padding-left: 288px;
-  padding-right: 288px;
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .pt-\[107px\] {
@@ -852,10 +861,6 @@ p,h1,h2,h3,h4,h5,h6,a{
 
 .pt-\[20px\] {
   padding-top: 20px;
-}
-
-.pt-\[16px\] {
-  padding-top: 16px;
 }
 
 .text-center {
@@ -919,6 +924,11 @@ p,h1,h2,h3,h4,h5,h6,a{
   color: rgb(114 122 130 / var(--tw-text-opacity));
 }
 
+.text-lightBlue {
+  --tw-text-opacity: 1;
+  color: rgb(47 105 255 / var(--tw-text-opacity));
+}
+
 .shadow-md {
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
@@ -929,6 +939,12 @@ p,h1,h2,h3,h4,h5,h6,a{
   font-family: 'TBCContractica';
 
   src:  url('../font/TBCContractica-Regular.ttf')
+}
+
+h1,h2,h3 {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  color: #000000;
 }
 
 .hover\:border-b-\[1px\]:hover {
