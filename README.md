@@ -8,6 +8,7 @@
 
 [Politician financing Page]()
 
+[Projects Page]()
 
 Run TailwindCss
 ```
