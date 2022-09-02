@@ -12,6 +12,9 @@ module.exports = {
         'darkButton' : '#323329', // Dark buttons
         'greenText' : '#327F37', // Green text 
         'lightGreen' : '#1A8917', // Light green text for active tabs
+        'activeGreen' : '#2FA837',
+        'lightGreenIcons': '#F2F6EC',
+        'grayBorder': '#E0E2E7',
         'lightBlack' : '#292D33', // Main black color
         'progress' : '#2f69ff0a', //Color of progress bar
       }
