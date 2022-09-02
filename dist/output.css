@@ -594,6 +594,11 @@ p,h1,h2,h3,h4,h5,h6,a{
   margin-bottom: 1.25rem;
 }
 
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .mr-\[32px\] {
   margin-right: 32px;
 }
@@ -664,6 +669,38 @@ p,h1,h2,h3,h4,h5,h6,a{
 
 .grid {
   display: grid;
+}
+
+.w-screen {
+  width: 100vw;
+}
+
+.max-w-\[\] {
+  max-width: ;
+}
+
+.max-w-\[1\] {
+  max-width: 1;
+}
+
+.max-w-\[13\] {
+  max-width: 13;
+}
+
+.max-w-\[134\] {
+  max-width: 134;
+}
+
+.max-w-\[1344\] {
+  max-width: 1344;
+}
+
+.max-w-\[1344p\] {
+  max-width: 1344p;
+}
+
+.max-w-\[1344px\] {
+  max-width: 1344px;
 }
 
 .flex-row {
