@@ -49,7 +49,7 @@
   </nav>
 
   <section>
-    <div class="max-w-[1344px] px-8 mx-auto">
+    <div class="max-w-[1344px] mx-auto">
       <div class="flex items-center mt-5 mb-8 gap-[6px]">
         <a class="text-sm font-medium leading-6" href="#">პოლიტიკოსები</a>
         <img src="../assets/arrow-right.svg" alt="Right Arrow">
@@ -57,7 +57,7 @@
         <img src="../assets/arrow-right.svg" alt="Right Arrow">
         <a class="text-sm text-activeGreen font-medium leading-6" href="#">საქართველოს დაბადება</a>
       </div>
-      <section class="bg-white rounded-t-lg p-10 pb-14 grid grid-cols-[2fr_1fr] gap-10">
+      <section class="bg-white rounded-t-lg p-10 pb-14 grid grid-cols-[2fr_1fr] gap-10 border-b border-grayBorder">
         <main class="flex flex-col gap-12">
           <div class="flex flex-col gap-8">
             <h2 class="text-[28px] leading-[40px] font-bold">საქართველოს დაბადება</h2>
@@ -236,6 +236,247 @@
           </div>
         </aside>
       </section>
+    </div>
+  </section>
+
+  <section>
+    <div class="bg-white mx-auto max-w-[1344px] pt-5 shadow-md">
+      <ul class="flex flex-row pb-5 px-8 border-b border-borderGray items-start gap-6 font-medium leading-[1.5rem] text-sm">
+        <li>
+          <a href="#" class=" pb-[25px] border-greenButton border-b text-greenButton">სტატისტიკა</a>
+        </li>
+        <li>
+          <a href="#" class="text-lightGray pb-[25px] border-greenButton hover:border-b hover:text-greenButton">განახლებები</a>
+        </li>
+        <li>
+          <a href="#" class="text-lightGray pb-[25px] border-greenButton hover:border-b hover:text-greenButton">community</a>
+        </li>
+      </ul>
+      <div class="flex justify-between gap-[10px] mt-8 px-10">
+        <div class="flex bg-gray-100 p-1 rounded-lg gap-[2px]">
+          <button
+            class="text-lightGray hover:text-lightBlack hover:bg-white rounded-lg text-sm px-3 py-1 active-btn">დაფინანსება</button>
+          <button
+            class="text-lightGray hover:text-lightBlack hover:bg-white rounded-lg text-sm px-3 py-1">ხელმომწერები</button>
+          <button
+            class="text-lightGray hover:text-lightBlack hover:bg-white rounded-lg text-sm px-3 py-1">დამფინანსელები</button>
+        </div>
+        <div class="flex bg-gray-100 p-1 rounded-lg gap-[2px]">
+          <button
+            class="text-lightGray hover:text-lightBlack hover:bg-white rounded-lg text-sm px-3 py-1">1
+            დღე</button>
+          <button
+            class="text-lightGray hover:text-lightBlack hover:bg-white rounded-lg text-sm px-3 py-1 active-btn">7
+            დღე</button>
+          <button
+            class="text-lightGray hover:text-lightBlack hover:bg-white rounded-lg text-sm px-3 py-1">1
+            თვე</button>
+          <button
+            class="text-lightGray hover:text-lightBlack hover:bg-white rounded-lg text-sm px-3 py-1">3
+            თვე</button>
+          <button
+            class="text-lightGray hover:text-lightBlack hover:bg-white rounded-lg text-sm px-3 py-1">6
+            თვე</button>
+          <button
+            class="text-lightGray hover:თვეtext-lightBlack hover:bg-white rounded-lg text-sm px-3 py-1">1
+            წელი</button>
+          <button
+            class="text-lightGray hover:text-lightBlack hover:bg-white rounded-lg text-sm px-3 py-1">სულ</button>
+
+
+
+        </div>
+      </div>
+      <!-- Chart  -->
+      <div class="mt-8 px-10 overflow-hidden">
+        <canvas id="chartLine"></canvas>
+      </div>
+
+      <!-- Required chart.js -->
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+      <!-- Chart line -->
+      <script>
+        const labels = ["January", "February", "March", "April", "May", "June"];
+        const data = {
+          labels: labels,
+          datasets: [
+            {
+              label: "My First dataset",
+              backgroundColor: "hsl(252, 82.9%, 67.8%)",
+              borderColor: "hsla(118, 87%, 34%, 1)",
+              data: [0, 10, 5, 2, 20, 30, 45,],
+            },
+          ],
+        };
+
+        const configLineChart = {
+          type: "line",
+          data,
+          options: {},
+        };
+
+        var chartLine = new Chart(
+          document.getElementById("chartLine"),
+          configLineChart
+        );
+      </script>
+    </div>
+  </section>
+
+  <section>
+    <div class="max-w-[1344px] mx-auto p-10 py-12 bg-white">
+      <div class="rounded-lg border border-borderGray p-8 flex flex-col gap-6">
+        <div class="flex flex-col gap-2">
+          <h3 class="font-bold text-2xl leading-[24px]">მხარი დაუჭირეთ სასურველ სტუმარს</h3>
+          <p>ტექსტი რომელიც ხსნის თუ რა არის ეს ბლოკი, როგორ მუშაობს და რა უნდა ქნას მომხმარებელმა რომ ხმა მისცეს სასუველ კანდიდატს რადგანაც შემთხვევითად გენერირებული ტექსტი ეხმარება დიზაინერებს და ტიპოგრაფიული ნაწარმის შემქმნელებს, რეალურთან მაქსიმალურად </p>
+
+        </div>
+        <hr class="bg-grayBorder ">
+        <div class="flex flex-col gap-2">
+          <label class="label group relative flex items-center gap-6 border rounded-md px-6 py-4" for="1">
+            <input class="hidden peer" type="radio" name="guest" id="1">
+            <span class="label-after absolute w-full h-full rounded-md border border-transparent left-0 bg-lightBlack bg-opacity-5 peer-checked:border-borderBlue peer-checked:bg-backgroundBlue transition-all duration-300"></span>
+            <span class="relative w-6 h-6 rounded-full border-2 border-lightGray after:absolute after:w-[10px] after:h-[10px] after:top-1/2 after:left-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:bg-borderBlue after:opacity-0 after:rounded-full peer-checked:after:opacity-100 peer-checked:border-borderBlue transition-all duration-300"></span>
+            <div class="flex items-center gap-3">
+              <img src="../assets/profile-6.png" alt="">
+            </div>
+            <div class="flex flex-col gap-1 w-full">
+              <div class="flex items-center justify-between font-medium">
+                <span>ირაკლი საფარელი</span>
+                <div><span class="text-lightGreen">9500₾</span> / 10000₾</div>
+              </div>
+              <div class="flex items-center justify-between text-lightGray text-sm">
+                <div class="flex items-center gap-1 justify-between">
+                  <span class="max-w-fit whitespace-nowrap">მინისტრი 90-იანებში</span>
+                  <img src="../assets/dot.svg" alt="Dot Icon">
+                  <span class="max-w-fit whitespace-nowrap">მოითხოვა: კარლო ანჩელოტი</span>
+                </div>
+                <span>25 ხმა</span>
+              </div>
+            </div>
+          </label>
+          <label class="label group relative flex items-center gap-6 border rounded-md px-6 py-4" for="2">
+            <input class="hidden peer" type="radio" name="guest" id="2">
+            <span class="label-after absolute w-full h-full rounded-md border border-transparent left-0 bg-lightBlack bg-opacity-5 peer-checked:border-borderBlue peer-checked:bg-backgroundBlue transition-all duration-300"></span>
+            <span class="relative w-6 h-6 rounded-full border-2 border-lightGray after:absolute after:w-[10px] after:h-[10px] after:top-1/2 after:left-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:bg-borderBlue after:opacity-0 after:rounded-full peer-checked:after:opacity-100 peer-checked:border-borderBlue transition-all duration-300"></span>
+            <div class="flex items-center gap-3">
+              <img src="../assets/profile-7.png" alt="">
+            </div>
+            <div class="flex flex-col gap-1 w-full">
+              <div class="flex items-center justify-between font-medium">
+                <span>გიორგი კალატოზი</span>
+                <div><span class="text-lightGreen">7200₾</span> / 10000₾</div>
+              </div>
+              <div class="flex items-center justify-between text-lightGray text-sm">
+                <div class="flex items-center gap-1 justify-between">
+                  <span class="max-w-fit whitespace-nowrap">პოლიტიკოსი</span>
+                  <img src="../assets/dot.svg" alt="Dot Icon">
+                  <span class="max-w-fit whitespace-nowrap">მოითხოვა: გასან გასვიანი</span>
+                </div>
+                <span>16 ხმა</span>
+              </div>
+            </div>
+          </label>
+          <label class="label group relative flex items-center gap-6 border rounded-md px-6 py-4" for="3">
+            <input class="hidden peer" type="radio" name="guest" id="3">
+            <span class="label-after absolute w-full h-full rounded-md border border-transparent left-0 bg-lightBlack bg-opacity-5 peer-checked:border-borderBlue peer-checked:bg-backgroundBlue transition-all duration-300"></span>
+            <span class="relative w-6 h-6 rounded-full border-2 border-lightGray after:absolute after:w-[10px] after:h-[10px] after:top-1/2 after:left-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:bg-borderBlue after:opacity-0 after:rounded-full peer-checked:after:opacity-100 peer-checked:border-borderBlue transition-all duration-300"></span>
+            <div class="flex items-center gap-3">
+              <img src="../assets/profile-8.png" alt="">
+            </div>
+            <div class="flex flex-col gap-1 w-full">
+              <div class="flex items-center justify-between font-medium">
+                <span>ჭაბუა ამირეჯიბი</span>
+                <div><span class="text-lightGreen">6500₾</span> / 10000₾</div>
+              </div>
+              <div class="flex items-center justify-between text-lightGray text-sm">
+                <div class="flex items-center gap-1 justify-between">
+                  <span class="max-w-fit whitespace-nowrap">პოლიტიკოსი</span>
+                  <img src="../assets/dot.svg" alt="Dot Icon">
+                  <span class="max-w-fit whitespace-nowrap">მოითხოვა: ევგენი დობროტაიგეროვსკი</span>
+                </div>
+                <span>12 ხმა</span>
+              </div>
+            </div>
+          </label>
+          <label class="label group relative flex items-center gap-6 border rounded-md px-6 py-4" for="4">
+            <input class="hidden peer" type="radio" name="guest" id="4">
+            <span class="label-after absolute w-full h-full rounded-md border border-transparent left-0 bg-lightBlack bg-opacity-5 peer-checked:border-borderBlue peer-checked:bg-backgroundBlue transition-all duration-300"></span>
+            <span class="relative w-6 h-6 rounded-full border-2 border-lightGray after:absolute after:w-[10px] after:h-[10px] after:top-1/2 after:left-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:bg-borderBlue after:opacity-0 after:rounded-full peer-checked:after:opacity-100 peer-checked:border-borderBlue transition-all duration-300"></span>
+            <div class="flex items-center gap-3">
+              <img src="../assets/profile-9.png" alt="">
+            </div>
+            <div class="flex flex-col gap-1 w-full">
+              <div class="flex items-center justify-between font-medium">
+                <span>უჯუშ ემხა</span>
+                <div><span class="text-lightGreen">4200₾</span> / 10000₾</div>
+              </div>
+              <div class="flex items-center justify-between text-lightGray text-sm">
+                <div class="flex items-center gap-1 justify-between">
+                  <span class="max-w-fit whitespace-nowrap">პოლიტიკოსი</span>
+                  <img src="../assets/dot.svg" alt="Dot Icon">
+                  <span class="max-w-fit whitespace-nowrap">მოითხოვა: ჩეკო პერესი</span>
+                </div>
+                <span>9 ხმა</span>
+              </div>
+            </div>
+          </label>
+          <label class="label group relative flex items-center gap-6 border rounded-md px-6 py-4" for="5">
+            <input class="hidden peer" type="radio" name="guest" id="5">
+            <span class="label-after absolute w-full h-full rounded-md border border-transparent left-0 bg-lightBlack bg-opacity-5 peer-checked:border-borderBlue peer-checked:bg-backgroundBlue transition-all duration-300"></span>
+            <span class="relative w-6 h-6 rounded-full border-2 border-lightGray after:absolute after:w-[10px] after:h-[10px] after:top-1/2 after:left-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:bg-borderBlue after:opacity-0 after:rounded-full peer-checked:after:opacity-100 peer-checked:border-borderBlue transition-all duration-300"></span>
+            <div class="flex items-center gap-3">
+              <img src="../assets/profile-7.png" alt="">
+            </div>
+            <div class="flex flex-col gap-1 w-full">
+              <div class="flex items-center justify-between font-medium">
+                <span>გიორგი კალატოზი</span>
+                <div><span class="text-lightGreen">2500₾</span> / 10000₾</div>
+              </div>
+              <div class="flex items-center justify-between text-lightGray text-sm">
+                <div class="flex items-center gap-1 justify-between">
+                  <span class="max-w-fit whitespace-nowrap">პოლიტიკოსი</span>
+                  <img src="../assets/dot.svg" alt="Dot Icon">
+                  <span class="max-w-fit whitespace-nowrap">მოითხოვა: ალვარო როდრიგესი</span>
+                </div>
+                <span>8 ხმა</span>
+              </div>
+            </div>
+          </label>
+          <label class="label group relative flex items-center gap-6 border rounded-md px-6 py-4" for="1">
+            <input class="hidden peer" type="radio" name="guest" id="1">
+            <span class="label-after absolute w-full h-full rounded-md border border-transparent left-0 bg-lightBlack bg-opacity-5 peer-checked:border-borderBlue peer-checked:bg-backgroundBlue transition-all duration-300"></span>
+            <span class="relative w-6 h-6 rounded-full border-2 border-lightGray after:absolute after:w-[10px] after:h-[10px] after:top-1/2 after:left-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:bg-borderBlue after:opacity-0 after:rounded-full peer-checked:after:opacity-100 peer-checked:border-borderBlue transition-all duration-300"></span>
+            <div class="flex items-center gap-3">
+              <img src="../assets/profile-9.png" alt="">
+            </div>
+            <div class="flex flex-col gap-1 w-full">
+              <div class="flex items-center justify-between font-medium">
+                <span>ოროჩა მანგა</span>
+                <div><span class="text-lightGray">0₾</span> / 10000₾</div>
+              </div>
+              <div class="flex items-center justify-between text-lightGray text-sm">
+                <div class="flex items-center gap-1 justify-between">
+                  <span class="max-w-fit whitespace-nowrap">პოლიტიკოსი</span>
+                  <img src="../assets/dot.svg" alt="Dot Icon">
+                  <span class="max-w-fit whitespace-nowrap">მოითხოვა: როდრიგო ალვარესი</span>
+                </div>
+                <span>0 ხმა</span>
+              </div>
+            </div>
+          </label>
+        </div>
+        <div class="flex items-center justify-between">
+          <button class="bg-greenButton font-medium ml-8 text-white text-center py-3 px-6 rounded-full text-sm flex items-center justify-center gap-2">
+            <span>სტუმრის დამატება</span>
+            <img src="../assets/edit-plus.svg" alt="">
+          </button>
+          <button class="bg-lightGrayButton font-medium ml-8 text-center py-3 px-6 rounded-full text-sm">
+            ყველას ნახვა <span>(53)</span>
+          </button>
+        </div>
+      </div>
     </div>
   </section>
 

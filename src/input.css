@@ -18,3 +18,7 @@
     background-color: white;
     color: #292D33;
 }
+
+.label {
+    position: relative;
+}

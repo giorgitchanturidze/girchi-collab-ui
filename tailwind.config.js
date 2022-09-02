@@ -15,6 +15,8 @@ module.exports = {
         'activeGreen' : '#2FA837',
         'lightGreenIcons': '#F2F6EC',
         'grayBorder': '#E0E2E7',
+        'borderBlue': '#2F69FF',
+        'backgroundBlue': '#2F69FF0A',
         'lightBlack' : '#292D33', // Main black color
         'progress' : '#2f69ff0a', //Color of progress bar
       }
