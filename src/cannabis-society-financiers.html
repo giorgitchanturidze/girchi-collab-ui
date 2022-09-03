@@ -271,6 +271,329 @@
 
             </div>
         </div>
+        <!-- This example requires Tailwind CSS v2.0+ -->
+        <div class="mt-10 flex flex-col">
+            <div class="overflow-x-auto">
+                <div class="inline-block min-w-full py-2 align-middle">
+                    <div class="overflow-hidden shadow ring-1 ring-black ring-opacity-5 rounded-lg">
+                        <table class="min-w-full divide-y divide-gray-300">
+                            <thead class="bg-borderGray">
+                                <tr>
+                                    <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-lightGray">
+                                        <div class="flex" id="rating">
+                                            <span>#რეიტინგი</span>
+                                            <img src="../assets/Sorting.svg" alt="">
+                                        </div>
+                                    </th>
+                                    <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-lightGray">
+                                        <div class="flex" id="financier">
+                                            <span>დამფინანსებელი</span>
+                                            <img src="../assets/Sorting.svg" alt="">
+                                        </div>
+                                    </th>
+
+                                    <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-lightGray">
+                                        <div class="flex" id="money">
+                                            <span>თანხა</span>
+                                            <img src="../assets/Sorting.svg" alt="">
+                                        </div>
+                                    </th>
+                                    <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-lightGray">
+                                        <div class="flex" id="frequency">
+                                            <span>სიხშირე</span>
+                                            <img src="../assets/Sorting.svg" alt="">
+                                        </div>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-gray-200 bg-white">
+                                <tr>
+                                    <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-lightBlack">
+                                        1</td>
+                                    <td class="whitespace-nowrap px-3 py-4 text-sm text-lightBlack">
+                                        <div class="flex gap-3 items-center">
+                                            <img src="../assets/small-profile-1.png">
+                                            <span>
+                                                ირაკლი საფარელი
+                                            </span>
+                                        </div>
+                                    </td>
+                                    <td class="whitespace-nowrap px-3 py-4 text-sm text-lightBlack">
+                                        100₾ </td>
+                                    <td class="whitespace-nowrap px-3 py-4 text-sm text-lightBlack">ერთჯერადი</td>
+                                </tr>
+                                <!-- More people... -->
+                                <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-lightBlack">
+                                    2</td>
+                                <td class="whitespace-nowrap px-3 py-4 text-sm text-lightBlack">
+                                    <div class="flex gap-3 items-center">
+                                        <img src="../assets/small-profile-2.png">
+                                        <span>
+                                            გოგა თურაშვილი
+                                        </span>
+                                    </div>
+                                </td>
+                                <td class="whitespace-nowrap px-3 py-4 text-sm text-lightBlack">
+                                    98₾ </td>
+                                <td class="whitespace-nowrap px-3 py-4 text-sm text-lightBlack">ერთჯერადი</td>
+                                </tr>
+                                <!-- More people... -->
+                                <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-lightBlack">
+                                    3</td>
+                                <td class="whitespace-nowrap px-3 py-4 text-sm text-lightBlack">
+                                    <div class="flex gap-3 items-center">
+                                        <img src="../assets/small-profile-3.png">
+                                        <span>
+                                            იამზე კაკაბაძე
+                                        </span>
+                                    </div>
+                                </td>
+                                <td class="whitespace-nowrap px-3 py-4 text-sm text-lightBlack">
+                                    90₾ </td>
+                                <td class="whitespace-nowrap px-3 py-4 text-sm text-lightBlack">ერთჯერადი</td>
+                                </tr>
+                                <!-- More people... -->
+                                <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-lightBlack">
+                                    4</td>
+                                <td class="whitespace-nowrap px-3 py-4 text-sm text-lightBlack">
+                                    <div class="flex gap-3 items-center">
+                                        <img src="../assets/small-profile-4.png">
+                                        <span>
+                                            გოჩა ხოჩაშვილი
+                                        </span>
+                                    </div>
+                                </td>
+                                <td class="whitespace-nowrap px-3 py-4 text-sm text-lightBlack">
+                                    88₾ </td>
+                                <td class="whitespace-nowrap px-3 py-4 text-sm text-lightBlack">ერთჯერადი</td>
+                                </tr>
+                                <!-- More people... -->
+                                <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-lightBlack">
+                                    5</td>
+                                <td class="whitespace-nowrap px-3 py-4 text-sm text-lightBlack">
+                                    <div class="flex gap-3 items-center">
+                                        <img src="../assets/small-profile-5.png">
+                                        <span>
+                                            ბაჩო ფოჩიშვილი
+                                        </span>
+                                    </div>
+                                </td>
+                                <td class="whitespace-nowrap px-3 py-4 text-sm text-lightBlack">
+                                    87₾ </td>
+                                <td class="whitespace-nowrap px-3 py-4 text-sm text-lightBlack">მრავალჯერადი</td>
+                                </tr>
+                                <!-- More people... -->
+                                <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-lightBlack">
+                                    6</td>
+                                <td class="whitespace-nowrap px-3 py-4 text-sm text-lightBlack">
+                                    <div class="flex gap-3 items-center">
+                                        <img src="../assets/small-profile-6.png">
+                                        <span>
+                                            დავით სამაგდებიშვილი
+                                        </span>
+                                    </div>
+                                </td>
+                                <td class="whitespace-nowrap px-3 py-4 text-sm text-lightBlack">
+                                    86₾ </td>
+                                <td class="whitespace-nowrap px-3 py-4 text-sm text-lightBlack">მრავალჯერადი</td>
+                                </tr>
+                                <!-- More people... -->
+                                <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-lightBlack">
+                                    7</td>
+                                <td class="whitespace-nowrap px-3 py-4 text-sm text-lightBlack">
+                                    <div class="flex gap-3 items-center">
+                                        <img src="../assets/small-profile-1.png">
+                                        <span>
+                                            ჯიმშერ ტყეშელაშვილი
+                                        </span>
+                                    </div>
+                                </td>
+                                <td class="whitespace-nowrap px-3 py-4 text-sm text-lightBlack">
+                                    79₾ </td>
+                                <td class="whitespace-nowrap px-3 py-4 text-sm text-lightBlack">მრავალჯერადი</td>
+                                </tr>
+                                <!-- More people... -->
+                                <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-lightBlack">
+                                    8</td>
+                                <td class="whitespace-nowrap px-3 py-4 text-sm text-lightBlack">
+                                    <div class="flex gap-3 items-center">
+                                        <img src="../assets/small-profile-2.png">
+                                        <span>
+                                            მიხეილ გელა სალუაშვილი
+                                        </span>
+                                    </div>
+                                </td>
+                                <td class="whitespace-nowrap px-3 py-4 text-sm text-lightBlack">
+                                    78₾ </td>
+                                <td class="whitespace-nowrap px-3 py-4 text-sm text-lightBlack">ერთჯერადი</td>
+                                </tr>
+                                <!-- More people... -->
+                                <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-lightBlack">
+                                    9</td>
+                                <td class="whitespace-nowrap px-3 py-4 text-sm text-lightBlack">
+                                    <div class="flex gap-3 items-center">
+                                        <img src="../assets/small-profile-3.png">
+                                        <span>
+                                            ედუარდ ყუფარაძე
+                                        </span>
+                                    </div>
+                                </td>
+                                <td class="whitespace-nowrap px-3 py-4 text-sm text-lightBlack">
+                                    70₾ </td>
+                                <td class="whitespace-nowrap px-3 py-4 text-sm text-lightBlack">ერთჯერადი</td>
+                                </tr>
+                                <!-- More people... -->
+                                <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-lightBlack">
+                                    10</td>
+                                <td class="whitespace-nowrap px-3 py-4 text-sm text-lightBlack">
+                                    <div class="flex gap-3 items-center">
+                                        <img src="../assets/small-profile-4.png">
+                                        <span>
+                                            ნარგიზა მათიაშვილი
+                                        </span>
+                                    </div>
+                                </td>
+                                <td class="whitespace-nowrap px-3 py-4 text-sm text-lightBlack">
+                                    70₾ </td>
+                                <td class="whitespace-nowrap px-3 py-4 text-sm text-lightBlack">ერთჯერადი</td>
+                                </tr>
+                                <!-- More people... -->
+                                <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-lightBlack">
+                                    11</td>
+                                <td class="whitespace-nowrap px-3 py-4 text-sm text-lightBlack">
+                                    <div class="flex gap-3 items-center">
+                                        <img src="../assets/small-profile-5.png">
+                                        <span>
+                                            ვიქტორ ბარნაბიშვილი
+                                        </span>
+                                    </div>
+                                </td>
+                                <td class="whitespace-nowrap px-3 py-4 text-sm text-lightBlack">
+                                    65₾ </td>
+                                <td class="whitespace-nowrap px-3 py-4 text-sm text-lightBlack">მრავალჯერადი</td>
+                                </tr>
+                                <!-- More people... -->
+                                <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-lightBlack">
+                                    12</td>
+                                <td class="whitespace-nowrap px-3 py-4 text-sm text-lightBlack">
+                                    <div class="flex gap-3 items-center">
+                                        <img src="../assets/small-profile-6.png">
+                                        <span>
+                                            ასმათ ნასყიდაშვილი
+                                        </span>
+                                    </div>
+                                </td>
+                                <td class="whitespace-nowrap px-3 py-4 text-sm text-lightBlack">
+                                    64₾ </td>
+                                <td class="whitespace-nowrap px-3 py-4 text-sm text-lightBlack">ერთჯერადი</td>
+                                </tr>
+                                <!-- More people... -->
+                                <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-lightBlack">
+                                    13</td>
+                                <td class="whitespace-nowrap px-3 py-4 text-sm text-lightBlack">
+                                    <div class="flex gap-3 items-center">
+                                        <img src="../assets/small-profile-1.png">
+                                        <span>
+                                            თამაზ გოჩიტაშვილი
+                                        </span>
+                                    </div>
+                                </td>
+                                <td class="whitespace-nowrap px-3 py-4 text-sm text-lightBlack">
+                                    52₾ </td>
+                                <td class="whitespace-nowrap px-3 py-4 text-sm text-lightBlack">მრავალჯერადი</td>
+                                </tr>
+                                <!-- More people... -->
+                                <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-lightBlack">
+                                    14</td>
+                                <td class="whitespace-nowrap px-3 py-4 text-sm text-lightBlack">
+                                    <div class="flex gap-3 items-center">
+                                        <img src="../assets/small-profile-2.png">
+                                        <span>
+                                            ნიკოლოზ მანაგაძე
+                                        </span>
+                                    </div>
+                                </td>
+                                <td class="whitespace-nowrap px-3 py-4 text-sm text-lightBlack">
+                                    50₾ </td>
+                                <td class="whitespace-nowrap px-3 py-4 text-sm text-lightBlack">ერთჯერადი</td>
+                                </tr>
+                                <!-- More people... -->
+                                <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-lightBlack">
+                                    15</td>
+                                <td class="whitespace-nowrap px-3 py-4 text-sm text-lightBlack">
+                                    <div class="flex gap-3 items-center">
+                                        <img src="../assets/small-profile-3.png">
+                                        <span>
+                                            დავით ილურიძე
+                                        </span>
+                                    </div>
+                                </td>
+                                <td class="whitespace-nowrap px-3 py-4 text-sm text-lightBlack">
+                                    48₾ </td>
+                                <td class="whitespace-nowrap px-3 py-4 text-sm text-lightBlack">მრავალჯერადი</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-between mt-8 items-center">
+                <div class="flex items-center">
+                    <button href="#" class="hover:bg-black rounded-lg">
+                        <img src="../assets/first-page-button.svg" alt="">
+                    </button>
+                    <button href="#" class="hover:bg-black rounded-lg">
+                        <img src="../assets/prev-page-button.svg" alt="">
+                    </button>
+                    <button href="#" class="hover:bg-black hover:text-white rounded-lg px-[15px] py-[6px]">1</button>
+                    <button href="#" class="hover:bg-black hover:text-white rounded-lg px-[15px] py-[6px]">2</button>
+                    <button href="#" class="hover:bg-black hover:text-white rounded-lg px-[15px] py-[6px]">3</button>
+                    <button href="#" class="hover:bg-black hover:text-white rounded-lg px-[15px] py-[6px]">4</button>
+                    <button href="#"
+                        class="hover:bg- text-lightGray hover:text-white rounded-lg px-[15px] py-[6px]">...</button>
+                    <button href="#" class="hover:bg-black hover:text-white rounded-lg px-[15px] py-[6px]">8</button>
+                    <button href="#" class="hover:bg-black rounded-lg">
+                        <img src="../assets/next-page-button.svg" alt="">
+                    </button>
+                    <button href="#" class="hover:bg-black rounded-lg">
+                        <img src="../assets/last-page-button.svg" alt="">
+                    </button>
+                </div>
+                <div class="flex items-center">
+                    <span class="text-lightGray text-sm border-borderGray border-r-[1px] pr-5">160-დან 15</span>
+                    <span class="text-lightGray text-sm mx-5">ნივთი თითო გვერდზე</span>
+                    <button id="dropdownDefault" data-dropdown-toggle="dropdown"
+                        class="flex hover:bg-lightGrayButton shadow-inner rounded-lg p-2 text-sm">
+                        <span>15</span>
+                        <img src="../assets/caret_down.svg">
+                    </button>
+                    <div id="dropdown"
+                        class="hidden z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700">
+                        <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefault">
+                            <li>
+                                <a href="#"
+                                    class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">30</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">50</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">100</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">200</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <dix class="flex gap-3 mt-8 justify-end">
+                <button class="bg-lightGrayButton rounded-lg py-2 px-8 ">გადმოწერე Excel</button>
+                <button class="bg-lightGrayButton rounded-lg py-2 px-8 ">გადმოწერე CSV</button>
+        </div>
 
 
     </section>
