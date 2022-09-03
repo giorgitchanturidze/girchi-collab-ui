@@ -6,7 +6,7 @@
 
 [The Cannabis Society Page](https://giorgitchanturidze.github.io/girchi-collab-ui/src/weed-society.html)
 
-[Politician financing Page]()
+[Politician financing Page](https://giorgitchanturidze.github.io/girchi-collab-ui/src/financing.html)
 
 [Projects Page](https://giorgitchanturidze.github.io/girchi-collab-ui/src/projects.html)
 
