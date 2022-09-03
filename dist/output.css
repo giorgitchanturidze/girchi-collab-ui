@@ -611,6 +611,11 @@ p,h1,h2,h3,h4,h5,h6,a{
   margin-right: auto;
 }
 
+.my-12 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
 .mr-\[32px\] {
   margin-right: 32px;
 }
@@ -945,6 +950,14 @@ p,h1,h2,h3,h4,h5,h6,a{
 
 .rounded-\[56px\] {
   border-radius: 56px;
+}
+
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+
+.rounded-3xl {
+  border-radius: 1.5rem;
 }
 
 .rounded-t-\[8px\] {
