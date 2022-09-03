@@ -711,6 +711,22 @@ p,h1,h2,h3,h4,h5,h6,a{
   margin-bottom: 18px;
 }
 
+.mb-\[\] {
+  margin-bottom: ;
+}
+
+.mb-\[16px\] {
+  margin-bottom: 16px;
+}
+
+.mb-\[26px\] {
+  margin-bottom: 26px;
+}
+
+.mb-\[116px\] {
+  margin-bottom: 116px;
+}
+
 .flex {
   display: flex;
 }
@@ -1231,6 +1247,10 @@ p,h1,h2,h3,h4,h5,h6,a{
 
 .pb-6 {
   padding-bottom: 1.5rem;
+}
+
+.pb-10 {
+  padding-bottom: 2.5rem;
 }
 
 .text-center {
