@@ -125,7 +125,7 @@
             <img src="../assets/share-icon.svg" alt="Share Icon">
           </button>
           <div class="flex flex-col gap-8">
-            <div class="flex flex-col gap-6 p-6 rounded-lg border border-grayBorder shadow-sm">
+            <div class="flex flex-col gap-6 p-6 rounded-lg border border-grayBorder shadow-sm sticky-container">
               <div class="flex flex-col gap-6">
                 <div class="flex items-center gap-4 w-12">
                   <div class="aspect-square w-full h-full bg-lightGreenIcons flex justify-center items-center rounded-lg">
@@ -163,8 +163,8 @@
                   ხელმოწერა
                 </button>
               </div>
-              <hr class="bg-grayBorder ">
-              <div class="flex flex-col gap-5">
+              <hr class="bg-grayBorder sticky-hidden">
+              <div class="flex flex-col gap-5 sticky-hidden">
                 <div class="flex items-center gap-5">
                   <div class="w-12 aspect-square rounded-full">
                     <img src="../assets/profile-1.png" alt="">
@@ -209,7 +209,7 @@
                 <img class="w-full aspect-square" src="../assets/small-profile-8.png" alt="">
               </div>
             </div>
-            <div class="flex flex-col gap-6 p-6 rounded-lg border border-grayBorder shadow-sm">
+            <div class="flex flex-col gap-6 p-6 rounded-lg border border-grayBorder shadow-sm sticky-relative">
               <h4 class="text-lg leading-[24px] font-bold">ავტორები</h4>
               <div class="flex flex-col gap-5">
                 <div class="flex items-center gap-5">
@@ -480,5 +480,19 @@
     </div>
   </section>
 
+
+    <script>
+      const stickyRelative = document.querySelector('.sticky-relative');
+      const stickyContainer = document.querySelector('.sticky-container');
+      window.addEventListener('scroll', () => {
+        if(window.scrollY >= stickyRelative.offsetTop + stickyRelative.clientHeight){
+          stickyContainer.classList.add('active');
+          stickyContainer.style.width = `${stickyContainer.parentElement.clientWidth}px`
+        }else {
+          stickyContainer.classList.remove('active');
+          stickyContainer.style.width = `100%`
+        }
+      })
+    </script>
   </body>
   </html>
