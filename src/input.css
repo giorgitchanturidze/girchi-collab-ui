@@ -22,3 +22,14 @@
 .label {
     position: relative;
 }
+
+.sticky-container.active {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background-color: #FFFFFF;
+}
+
+.sticky-container.active .sticky-hidden{
+    display: none;
+}
