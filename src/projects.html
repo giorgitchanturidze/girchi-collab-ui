@@ -325,7 +325,7 @@
   </section>
 
   <section>
-    <div class="max-w-[1344px] mx-auto p-10 py-12 bg-white">
+    <div class="max-w-[1344px] mb-[288px] mx-auto p-10 py-12 bg-white">
       <div class="rounded-lg border border-borderGray p-8 flex flex-col gap-6">
         <div class="flex flex-col gap-2">
           <h3 class="font-bold text-2xl leading-[24px]">მხარი დაუჭირეთ სასურველ სტუმარს</h3>
@@ -444,8 +444,8 @@
               </div>
             </div>
           </label>
-          <label class="label group relative flex items-center gap-6 border rounded-md px-6 py-4" for="1">
-            <input class="hidden peer" type="radio" name="guest" id="1">
+          <label class="label group relative flex items-center gap-6 border rounded-md px-6 py-4" for="6">
+            <input class="hidden peer" type="radio" name="guest" id="6">
             <span class="label-after absolute w-full h-full rounded-md border border-transparent left-0 bg-lightBlack bg-opacity-5 peer-checked:border-borderBlue peer-checked:bg-backgroundBlue transition-all duration-300"></span>
             <span class="relative w-6 h-6 rounded-full border-2 border-lightGray after:absolute after:w-[10px] after:h-[10px] after:top-1/2 after:left-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:bg-borderBlue after:opacity-0 after:rounded-full peer-checked:after:opacity-100 peer-checked:border-borderBlue transition-all duration-300"></span>
             <div class="flex items-center gap-3">
@@ -484,13 +484,18 @@
     <script>
       const stickyRelative = document.querySelector('.sticky-relative');
       const stickyContainer = document.querySelector('.sticky-container');
+      let sticky = false;
+      let windowScroll;
       window.addEventListener('scroll', () => {
-        if(window.scrollY >= stickyRelative.offsetTop + stickyRelative.clientHeight){
+        if(window.scrollY >= stickyRelative.offsetTop + stickyRelative.clientHeight && !sticky){
+          windowScroll = stickyRelative.offsetTop + stickyRelative.clientHeight;
           stickyContainer.classList.add('active');
           stickyContainer.style.width = `${stickyContainer.parentElement.clientWidth}px`
-        }else {
+          sticky = true;
+        }else if(sticky && window.scrollY <= windowScroll){
           stickyContainer.classList.remove('active');
           stickyContainer.style.width = `100%`
+          sticky = false;
         }
       })
     </script>
