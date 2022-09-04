@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>საქართველოს დაბადება</title>
+    <title>კანაფის საზოგადოება</title>
     <link href="../dist/output.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
@@ -238,70 +238,74 @@
         </div>
         <div class="flex justify-between gap-[10px]">
             <div class="flex bg-gray-100 mt-[32px] p-[4px] rounded-[8px] gap-[2px]">
-                <button
-                    class="text-lightGray hover:text-lightBlack hover:bg-white rounded-[8px] text-[14px] px-[12px] py-[4px]">დაფინანსება</button>
-                <button
-                    class="text-lightGray hover:text-lightBlack hover:bg-white rounded-[8px] text-[14px] px-[12px] py-[4px]">ხელმომწერები</button>
-                <a href="/src/cannabis-society-financiers.html"><button
-                    class="text-lightGray hover:text-lightBlack hover:bg-white rounded-[8px] text-[14px] px-[12px] py-[4px]">დამფინანსებლები</button></a>
+              <button
+                class="text-lightGray hover:text-lightBlack hover:bg-white rounded-[8px] text-[14px] px-[12px] py-[4px] active-btn">დაფინანსება</button>
+              <button
+               class="text-lightGray hover:text-lightBlack hover:bg-white rounded-[8px] text-[14px] px-[12px] py-[4px]">ხელმომწერები</button>
+              <button
+              href="cannabis-society-financiers.html" class="text-lightGray hover:text-lightBlack hover:bg-white rounded-[8px] text-[14px] px-[12px] py-[4px]">დამფინანსებლები</button>
             </div>
             <div class="flex bg-gray-100 mt-[32px] p-[4px] rounded-[8px] gap-[2px]">
-                <button
-                    class="text-lightGray hover:text-lightBlack hover:bg-white rounded-[8px] text-[14px] px-[12px] py-[4px]">1
-                    დღე</button>
-                <button
-                    class="text-lightGray hover:text-lightBlack hover:bg-white rounded-[8px] text-[14px] px-[12px] py-[4px]">7
-                    დღე</button>
-                <button
-                    class="text-lightGray hover:text-lightBlack hover:bg-white rounded-[8px] text-[14px] px-[12px] py-[4px]">1
-                    თვე</button>
-                <button
-                    class="text-lightGray hover:text-lightBlack hover:bg-white rounded-[8px] text-[14px] px-[12px] py-[4px]">3
-                    თვე</button>
-                <button
-                    class="text-lightGray hover:text-lightBlack hover:bg-white rounded-[8px] text-[14px] px-[12px] py-[4px]">6
-                    თვე</button>
-                <button
-                    class="text-lightGray hover:თვეtext-lightBlack hover:bg-white rounded-[8px] text-[14px] px-[12px] py-[4px]">1
-                    წელი</button>
-                <button
-                    class="text-lightGray hover:text-lightBlack hover:bg-white rounded-[8px] text-[14px] px-[12px] py-[4px]">სულ</button>
-
-
-
+              <button
+                class="text-lightGray hover:text-lightBlack hover:bg-white rounded-[8px] text-[14px] px-[12px] py-[4px]">1
+                დღე</button>
+              <button
+                class="text-lightGray hover:text-lightBlack hover:bg-white rounded-[8px] text-[14px] px-[12px] py-[4px]">7
+                დღე</button>
+              <button
+                class="text-lightGray hover:text-lightBlack hover:bg-white rounded-[8px] text-[14px] px-[12px] py-[4px]">1
+                თვე</button>
+              <button
+                class="text-lightGray hover:text-lightBlack hover:bg-white rounded-[8px] text-[14px] px-[12px] py-[4px]">3
+                თვე</button>
+              <button
+                class="text-lightGray hover:text-lightBlack hover:bg-white rounded-[8px] text-[14px] px-[12px] py-[4px]">6
+                თვე</button>
+              <button
+                class="text-lightGray hover:თვეtext-lightBlack hover:bg-white rounded-[8px] text-[14px] px-[12px] py-[4px] active-btn">1
+                წელი</button>
+              <button
+                class="text-lightGray hover:text-lightBlack hover:bg-white rounded-[8px] text-[14px] px-[12px] py-[4px]">სულ</button>
+              <img src="../assets/Component 58.svg" alt="">
+    
+    
             </div>
-        </div>
-        <div class="mt-[32px] overflow-hidden bg-white  ">
+          </div>
+          <!-- Chart  -->
+          <div class="mt-[32px] overflow-hidden">
             <canvas id="chartLine"></canvas>
-        </div>
-
-    </section>
-    <!-- Chart line -->
-    <script>
-        const labels = ["January", "February", "March", "April", "May", "June"];
-        const data = {
-            labels: labels,
-            datasets: [
+          </div>
+    
+          <!-- Required chart.js -->
+          <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+          <!-- Chart line -->
+          <script>
+            const labels = ["January", "February", "March", "April", "May", "June"];
+            const data = {
+              labels: labels,
+              datasets: [
                 {
-                    label: "My First dataset",
-                    backgroundColor: "hsl(252, 82.9%, 67.8%)",
-                    borderColor: "hsla(118, 87%, 34%, 1)",
-                    data: [0, 10, 5, 2, 20, 30, 45,],
+                  label: "My First dataset",
+                  backgroundColor: "hsla(118, 87%, 34%, 1)",
+                  borderColor: "hsla(118, 87%, 34%, 1)",
+                  data: [0, 10, 5, 2, 20, 30, 45,],
                 },
-            ],
-        };
-
-        const configLineChart = {
-            type: "line",
-            data,
-            options: {},
-        };
-
-        var chartLine = new Chart(
-            document.getElementById("chartLine"),
-            configLineChart
-        );
-    </script>
+              ],
+            };
+    
+            const configLineChart = {
+              type: "line",
+              data,
+              options: {},
+            };
+    
+            var chartLine = new Chart(
+              document.getElementById("chartLine"),
+              configLineChart
+            );
+          </script>
+        </div>
 </body>
 
 </html>
