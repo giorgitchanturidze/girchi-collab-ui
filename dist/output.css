@@ -601,6 +601,10 @@ p,h1,h2,h3,h4,h5,h6,a{
   z-index: 50;
 }
 
+.m-10 {
+  margin: 2.5rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -1032,6 +1036,18 @@ p,h1,h2,h3,h4,h5,h6,a{
 .gap-x-5 {
   -moz-column-gap: 1.25rem;
        column-gap: 1.25rem;
+}
+
+.gap-y-4 {
+  row-gap: 1rem;
+}
+
+.gap-y-6 {
+  row-gap: 1.5rem;
+}
+
+.gap-y-10 {
+  row-gap: 2.5rem;
 }
 
 .space-x-3 > :not([hidden]) ~ :not([hidden]) {
@@ -1578,6 +1594,10 @@ p,h1,h2,h3,h4,h5,h6,a{
   font-size: 24px;
 }
 
+.text-\[22px\] {
+  font-size: 22px;
+}
+
 .text-\[20px\] {
   font-size: 20px;
 }
@@ -1589,10 +1609,6 @@ p,h1,h2,h3,h4,h5,h6,a{
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
-}
-
-.text-\[22px\] {
-  font-size: 22px;
 }
 
 .font-bold {
