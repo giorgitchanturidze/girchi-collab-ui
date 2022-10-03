@@ -932,10 +932,6 @@ p,h1,h2,h3,h4,h5,h6,a{
   align-items: center;
 }
 
-.items-stretch {
-  align-items: stretch;
-}
-
 .justify-end {
   justify-content: flex-end;
 }
@@ -1091,10 +1087,6 @@ p,h1,h2,h3,h4,h5,h6,a{
 
 .self-center {
   align-self: center;
-}
-
-.self-stretch {
-  align-self: stretch;
 }
 
 .overflow-hidden {
@@ -1599,6 +1591,10 @@ p,h1,h2,h3,h4,h5,h6,a{
   line-height: 1.75rem;
 }
 
+.text-\[22px\] {
+  font-size: 22px;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -1643,6 +1639,11 @@ p,h1,h2,h3,h4,h5,h6,a{
   letter-spacing: 1px;
 }
 
+.text-lightBlack {
+  --tw-text-opacity: 1;
+  color: rgb(41 45 51 / var(--tw-text-opacity));
+}
+
 .text-\[\#327F37\] {
   --tw-text-opacity: 1;
   color: rgb(50 127 55 / var(--tw-text-opacity));
@@ -1671,11 +1672,6 @@ p,h1,h2,h3,h4,h5,h6,a{
 .text-\[\#727A82\] {
   --tw-text-opacity: 1;
   color: rgb(114 122 130 / var(--tw-text-opacity));
-}
-
-.text-lightBlack {
-  --tw-text-opacity: 1;
-  color: rgb(41 45 51 / var(--tw-text-opacity));
 }
 
 .text-lightGray {
