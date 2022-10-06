@@ -384,7 +384,7 @@
                     დააფინანსე
                   </button></a>
               </div>
-              <div class="flex flex-col gap-4">
+              <div class="flex flex-col gap-4 sticky-relative">
                 <h3 class="font-bold">სარჩევი</h3>
                 <nav class="cursor-pointer p-4 flex flex-col">
                   <!-- <ul class="border-lightGray border-l-2 border-solid p-4 flex flex-col gap-6"> -->
@@ -406,7 +406,24 @@
             </div>
           </div>
   </main>
-
+  <script>
+    const stickyRelative = document.querySelector('.sticky-relative');
+    const stickyContainer = document.querySelector('.sticky-container');
+    let sticky = false;
+    let windowScroll;
+    window.addEventListener('scroll', () => {
+      if (window.scrollY >= stickyRelative.offsetTop + stickyRelative.clientHeight && !sticky) {
+        windowScroll = stickyRelative.offsetTop + stickyRelative.clientHeight;
+        stickyContainer.classList.add('active');
+        stickyContainer.style.width = `${stickyContainer.parentElement.clientWidth}px`
+        sticky = true;
+      } else if (sticky && window.scrollY <= windowScroll) {
+        stickyContainer.classList.remove('active');
+        stickyContainer.style.width = `100%`
+        sticky = false;
+      }
+    })
+  </script>
   
 </body>
 </html>
