@@ -12,6 +12,8 @@
 
 [Projects Page](https://giorgitchanturidze.github.io/girchi-collab-ui/src/projects.html)
 
+[About Page](https://giorgitchanturidze.github.io/girchi-collab-ui/src/about.html)
+
 Run TailwindCss
 ```
 npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
