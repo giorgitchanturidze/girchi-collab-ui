@@ -1200,6 +1200,10 @@ p,h1,h2,h3,h4,h5,h6,a{
   border-radius: 32px;
 }
 
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+
 .rounded-t-lg {
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
@@ -1531,8 +1535,8 @@ p,h1,h2,h3,h4,h5,h6,a{
   padding-bottom: 24px;
 }
 
-.pb-14 {
-  padding-bottom: 3.5rem;
+.pb-28 {
+  padding-bottom: 7rem;
 }
 
 .pl-4 {
@@ -1631,6 +1635,10 @@ p,h1,h2,h3,h4,h5,h6,a{
   padding-right: 1.25rem;
 }
 
+.pb-14 {
+  padding-bottom: 3.5rem;
+}
+
 .pb-5 {
   padding-bottom: 1.25rem;
 }
@@ -1639,16 +1647,8 @@ p,h1,h2,h3,h4,h5,h6,a{
   padding-left: 30px;
 }
 
-.pb-24 {
-  padding-bottom: 6rem;
-}
-
 .pb-32 {
   padding-bottom: 8rem;
-}
-
-.pb-28 {
-  padding-bottom: 7rem;
 }
 
 .text-left {
@@ -1823,6 +1823,11 @@ p,h1,h2,h3,h4,h5,h6,a{
 .text-activeGreen {
   --tw-text-opacity: 1;
   color: rgb(47 168 55 / var(--tw-text-opacity));
+}
+
+.text-\[\#0F62FE\] {
+  --tw-text-opacity: 1;
+  color: rgb(15 98 254 / var(--tw-text-opacity));
 }
 
 .accent-\[\#1A8917\] {
