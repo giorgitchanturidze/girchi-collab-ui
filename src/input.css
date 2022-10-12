@@ -30,6 +30,13 @@
     background-color: #FFFFFF;
 }
 
+.sticky-container.absolute {
+    position: absolute;
+    background-color: #FFFFFF;
+    transform: translateY(-100%);
+    
+}
+
 .sticky-container.active .sticky-hidden{
     display: none;
 }

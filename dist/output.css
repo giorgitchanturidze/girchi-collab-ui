@@ -568,12 +568,10 @@ p,h1,h2,h3,h4,h5,h6,a{
 }
 
 .sticky {
-  position: -webkit-sticky;
   position: sticky;
 }
 
 .\!sticky {
-  position: -webkit-sticky !important;
   position: sticky !important;
 }
 
@@ -2028,6 +2026,12 @@ p,h1,h2,h3,h4,h5,h6,a{
   top: 0;
   z-index: 1;
   background-color: #FFFFFF;
+}
+
+.sticky-container.absolute {
+  position: absolute;
+  background-color: #FFFFFF;
+  transform: translateY(-100%);
 }
 
 .sticky-container.active .sticky-hidden{

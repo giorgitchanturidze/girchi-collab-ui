@@ -8,7 +8,7 @@
   <link href="../dist/output.css" rel="stylesheet">
 </head>
 
-<body class="bg-midGray text-lightBlack grid justify-center ">
+<body class="bg-midGray text-lightBlack grid justify-center overflow-x-hidden">
 
 
   <nav class="bg-white py-4 px-8 shadow-md w-screen">
@@ -144,7 +144,7 @@
             </div>
           </div>
           <div class="flex flex-col gap-3">
-            <div class="grid grid-cols-2 gap-2">
+            <div class="stop grid grid-cols-2 gap-2">
               <img class="aspect-[4/3] " src="../assets/projects-img-4.png" alt="">
               <img class="aspect-[4/3] " src="../assets/projects-img-5.png" alt="">
             </div>
@@ -552,27 +552,42 @@
           </form>
         </div>
       </div>
-    </section>
+  </section>
 
 
-    <script>
-      const stickyRelative = document.querySelector('.sticky-relative');
-      const stickyContainer = document.querySelector('.sticky-container');
-      let sticky = false;
-      let windowScroll;
-      window.addEventListener('scroll', () => {
+  <script>
+    const stop = document.querySelector('.stop')
+    const lastDot = stop.clientHeight + stop.offsetTop;
+    const stickyRelative = document.querySelector('.sticky-relative');
+    const stickyContainer = document.querySelector('.sticky-container');
+    let sticky = false;
+    let windowScroll;
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY >= lastDot - stickyContainer.clientHeight) {
+        stickyContainer.classList.add('active');
+        stickyContainer.classList.add('absolute');
+        stickyContainer.style.top = `${lastDot}px`;
+        stickyContainer.style.width = `${stickyContainer.parentElement.clientWidth}px`;
+        sticky = false;
+      } else {
         if (window.scrollY >= stickyRelative.offsetTop + stickyRelative.clientHeight && !sticky) {
           windowScroll = stickyRelative.offsetTop + stickyRelative.clientHeight;
+          stickyContainer.classList.remove('absolute')
           stickyContainer.classList.add('active');
+          stickyContainer.style.top = '0'
           stickyContainer.style.width = `${stickyContainer.parentElement.clientWidth}px`
           sticky = true;
         } else if (sticky && window.scrollY <= windowScroll) {
+          stickyContainer.classList.remove('absolute')
           stickyContainer.classList.remove('active');
+          stickyContainer.style.top = '0'
           stickyContainer.style.width = `100%`
           sticky = false;
         }
-      })
-    </script>
+      }
+    })
+  </script>
 </body>
 
 </html>
