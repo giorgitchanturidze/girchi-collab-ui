@@ -27,9 +27,18 @@
     position: fixed;
     top: 0;
     z-index: 1;
-    background-color: #FFFFFF;
+    background-color: #fff;
 }
 
 .sticky-container.active .sticky-hidden{
+    display: none;
+}
+.sticky-container.active-about {
+    position:fixed;
+    top:0;
+    z-index: 1;
+    background-color: transparent;
+}
+.sticky-container.active-about .sticky-hidden{
     display: none;
 }

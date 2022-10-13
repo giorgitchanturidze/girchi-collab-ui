@@ -296,7 +296,7 @@
                 </div>
                 <section class="pl-18 md:pl-20">
             <aside class="flex flex-col gap-8 w-fit mt-5">
-              <div class="flex flex-col gap-6 p-4 rounded-lg border border-grayBorder shadow-sm sticky-container sm:mr-6 md:mr-0">
+              <div class="flex flex-col gap-6 p-4 rounded-lg border border-grayBorder sticky-relative shadow-sm sm:mr-6 md:mr-0">
                 <div class="flex flex-col gap-6">
                   <img src="../assets/Frame.jpg" class="rounded w-full">
                   <h2 class="font-bold">კოტე თუთაბერი</h2>
@@ -312,7 +312,7 @@
                     დააფინანსე
                   </button></a>
               </div>
-              <div class="flex flex-col gap-4 sticky-relative">
+              <div class="flex flex-col gap-4 sticky-container">
                 <h3 class="font-bold">სარჩევი</h3>
                 <nav class="cursor-pointer p-4 flex flex-col">
                 
@@ -343,11 +343,11 @@
     window.addEventListener('scroll', () => {
       if (window.scrollY >= stickyRelative.offsetTop + stickyRelative.clientHeight && !sticky) {
         windowScroll = stickyRelative.offsetTop + stickyRelative.clientHeight;
-        stickyContainer.classList.add('active');
-        stickyContainer.style.width = `${stickyContainer.parentElement.clientWidth}px`
+        stickyContainer.classList.add('active-about');
+        stickyContainer.style.width = `${stickyContainer.parentElement.clientHeight}px`
         sticky = true;
       } else if (sticky && window.scrollY <= windowScroll) {
-        stickyContainer.classList.remove('active');
+        stickyContainer.classList.remove('active-about');
         stickyContainer.style.width = `100%`
         sticky = false;
       }
