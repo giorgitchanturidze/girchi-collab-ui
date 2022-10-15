@@ -568,10 +568,12 @@ p,h1,h2,h3,h4,h5,h6,a{
 }
 
 .sticky {
+  position: -webkit-sticky;
   position: sticky;
 }
 
 .\!sticky {
+  position: -webkit-sticky !important;
   position: sticky !important;
 }
 
@@ -2035,6 +2037,17 @@ p,h1,h2,h3,h4,h5,h6,a{
 }
 
 .sticky-container.active .sticky-hidden{
+  display: none;
+}
+
+.sticky-container.active-about{
+  position:fixed;
+  top:0;
+  z-index:1;
+  background-color: transparent;
+}
+
+.sticky-container.active-about .sticky-hidden{
   display: none;
 }
 
